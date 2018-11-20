@@ -1,0 +1,4 @@
+*/5 * * * * /mediastream/5minScript.sh >> /mediastream/recolecta_info.log
+0 5 * * * /usr/bin/mongodump --archive=/mediastream/mongobackup/mongobkp-`date '+%H:%M-%d%m%Y'`>> /var/log/mongo_backup.log
+0 20 * * * /usr/bin/mongodump --archive=/mediastream/mongobackup/mongobkp-`date '+%H:%M-%d%m%Y'`>> /var/log/mongo_backup.log
+
